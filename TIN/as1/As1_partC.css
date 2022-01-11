@@ -1,0 +1,21 @@
+.column {
+  float: left;
+  width: 50%;
+}
+
+.column img {
+  border-radius: 30px;
+  margin: 5px;
+  float: left;
+}
+
+.column img:after, .column:after {
+  content: "";
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 70%;
+  }
+}
