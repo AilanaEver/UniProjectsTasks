@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6c</title>
+</head>
+<body>
+    <form>
+        E-mail:<br>
+        <input id="form1" type="text" name="email" value="">
+        <br><br>
+        Password:<br>
+        <input id="form2" type="text" name="password" value="">
+        <br>
+    </form>
+    <button onclick="validation()">Validate</button>
+</body>
+
+<script>
+function validation() {
+    var email = document.getElementById("form1").value;
+    var password = document.getElementById("form2").value;
+    if (!validateEmail(email)) emailError();
+    else emailConfirmation();
+    if (!validatePassword(password)) passwordError();
+    else passwordConfirmation();
+}
+function validateEmail(email) {
+    var re = /^\S+@\S+\.\S+$/;
+    return re.test(String(email).toLowerCase());
+}
+function validatePassword(password) {
+    var re = /^\d+$/;
+    return re.test(String(password).toLowerCase());
+}
+function emailConfirmation() {
+    document.getElementById("form1").style.borderColor = "green";  
+}
+function passwordConfirmation() {
+    document.getElementById("form2").style.borderColor = "green"; 
+}
+function emailError() { 
+    document.getElementById("form1").style.borderColor = "red";
+}
+function passwordError() {
+    document.getElementById("form2").style.borderColor = "red";
+}
+
+</script>
+</html>
