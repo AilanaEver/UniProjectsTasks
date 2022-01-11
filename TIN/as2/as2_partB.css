@@ -1,0 +1,22 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 0.9em;
+}
+form {
+    width: 80%;
+    text-align: justify;
+}
+.form-elem {
+    padding: 5px;
+}
+.text-input {
+    width: 100%;
+}
+
+.form-div {
+    display: flex;
+    justify-content: center;
+}
+label[required] {
+  color: red;
+}
