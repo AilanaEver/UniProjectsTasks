@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="as2_partB.css">
+    <title>as2_partA</title>
+</head>
+
+<body>
+    <div class="form-div">
+        <form>
+            <div class="form-elem">
+			<label for="login" required/>Login: </label>
+               <input type="text" id="login" name="login"> 
+			   
+            </div>
+            <div class="form-elem">
+				<label for="password" required/>Password: </label>
+				<input type="password" id="password" name="password">      
+            </div>
+			
+            <div class="form-elem">   
+			<legend>Programming interests</legend>
+			<div>
+				<input type="checkbox" id="backend" value="backend" name="interest">
+				<label for="coding">Back-end</label>
+			</div>
+				<div>
+			<input type="checkbox" id="frontend" value="frontend" name="interest">
+			<label for="music">Front-end</label>
+            </div>
+			
+            <div class="form-elem">
+			<legend>Gender:</legend>
+                <div class="radio-elem">
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label for="http">Male</label>
+                </div>
+                <div class="radio-elem">
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="https">Female</label>
+                </div>
+            </div>
+            <div class="form-elem">
+                <select name="per-type" id="pet-select">
+                    <option>Choose age category...</option>
+                    <option>under 18</option>
+                    <option>18-25</option>
+					<option>26-40</option>
+					<option>41-59</option>
+					<option>60+</option>
+                </select>
+            </div>
+            <div class="form-elem">
+			<legend>Describe yourself</legend>
+                <textarea id="text" name="text" rows="5" cols="30">...</textarea>
+            </div>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </div>
+</body>
+</html>
