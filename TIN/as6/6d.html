@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6d</title>
+</head>
+<body>
+    <form>
+        NickName:<br>
+        <input id="form1" type="text" name="form1" value="" >
+        <br><br>
+        Game character:<br>
+        <input id="form2" type="text" name="form2" value="" >
+		<br>
+    </form>
+    <button onclick="validation()">Validate</button>
+    <br><br>
+    <table id = "table"></table>
+    <br>
+</body>
+
+<script>
+	function validation() {
+    var table = document.getElementById("table");
+    var row = table.insertRow(table.rows.length);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    if (document.getElementById("form1").value.length != 0 || document.getElementById("form2").value.length != 0) {
+    cell1.innerHTML = document.getElementById("form1").value;
+    cell2.innerHTML = document.getElementById("form2").value;
+    } else {
+    cell1.innerHTML = "nothing";
+    cell2.innerHTML = "nothing";
+    }
+}
+</script>
+</html>
